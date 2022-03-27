@@ -1,0 +1,11 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+            <input type="submit" value="Продублировать на почту" name="_send_email">
+    </div>
+    <div class="submit-row">
+            <input type="submit" value="Отправить промокод" name="_send_promocode">
+    </div>
+{% endblock %}

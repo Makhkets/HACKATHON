@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <p>{{ msg }}</p>
+        <br>
+        <h2>Список страниц</h2>
+        <br>
+        <ol>
+            {% for page in pages %}
+                    <li>{{ page.id }} : {{ page.name }}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
