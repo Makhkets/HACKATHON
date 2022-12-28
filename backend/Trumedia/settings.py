@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY", 'aisa4t72ршгш23739099;;((лоо8--==-a;];,cvm')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG") == "TRUE"
@@ -44,13 +44,11 @@ INSTALLED_APPS = [
     'api.v1.users',
     'api.v1.files',
     'api.v1.images',
-    'api.v1.billing',
-    'api.v1.referals',
-    'api.v1.texts',
     'silk',
     'oauth2_provider',
     'social_django',
     'drf_social_oauth2',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +92,7 @@ INTERNAL_IPS = [
     # ...
 ]
 
-ROOT_URLCONF = 'Trumedia.urls'
+ROOT_URLCONF = 'Ecomexpert.urls'
 
 TEMPLATES = [
     {
@@ -114,7 +112,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Trumedia.wsgi.application'
+WSGI_APPLICATION = 'Ecomexpert.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -179,7 +177,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -256,20 +254,21 @@ if USE_S3:
     # s3 static settings
     STATIC_LOCATION = 'static'
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-    STATICFILES_STORAGE = 'Trumedia.storage_backends.StaticStorage'
+    STATICFILES_STORAGE = 'Ecomexpert.storage_backends.StaticStorage'
     # s3 public media settings
     PUBLIC_MEDIA_LOCATION = 'media'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{PUBLIC_MEDIA_LOCATION}/'
-    DEFAULT_FILE_STORAGE = 'Trumedia.storage_backends.PublicMediaStorage'
+    DEFAULT_FILE_STORAGE = 'Ecomexpert.storage_backends.PublicMediaStorage'
 else:
-    STATIC_URL = '/backend_static/'
+    STATIC_URL = '/static/'
     STATIC_ROOT = './static/'
-    MEDIA_URL = '/backend_media/'
+    MEDIA_URL = '/media/'
     MEDIA_ROOT = './media/'
 
 
+
 # ---------------- Local Settings ---------------------------------------
-# Put your local settings in Trumedia directory to override this settings
+# Put your local settings in Ecomexpert directory to override this settings
 # File name should be local_settings.py
 try:
     from .local_settings import *

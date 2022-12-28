@@ -13,26 +13,24 @@ services:
       context: .
       dockerfile: ./compose/nginx/Dockerfile
     restart: always
-    container_name: "${COMPOSE_PROJECT_NAME}-nginx"
-    environment:
-      VIRTUAL_HOST: ${DOMAIN}
-      LETSENCRYPT_HOST: ${DOMAIN}
     volumes:
       - ./compose/nginx/config:/etc/nginx/conf.d
       - ./compose/nginx/log:/var/log/nginx
       - ./backend:/backend
+    ports:
+      - "80:80"
     depends_on:
       - web
     networks:
       - djangonetwork
-      - frontend-network
 
   web:
     build:
       context: .
       dockerfile: compose/django/Dockerfile
+    image: comexpert_django
+    container_name: comexpert_django
     restart: always
-    container_name: "${COMPOSE_PROJECT_NAME}-web"
     depends_on:
       - postgres
       - redis
@@ -52,8 +50,7 @@ services:
     build:
       context: .
       dockerfile: compose/postgres14/Dockerfile
-    restart: always
-    container_name: "${COMPOSE_PROJECT_NAME}-postgres"  
+    restart: always  
     env_file:
       - ./.envs/.postgres
     volumes:
@@ -64,39 +61,27 @@ services:
 
   redis:
     image: redis:alpine
-    container_name: "${COMPOSE_PROJECT_NAME}-redis"
     restart: always
     environment:
      - REDIS_REPLICATION_MODE=master
-#    expose:
-#      - "6379"
+    expose:
+      - "6379"
     networks:
       - djangonetwork
     volumes:
       - 'redisdata:/data'  
- 
+  
   rabbit:
     restart: always
-    container_name: "${COMPOSE_PROJECT_NAME}-rabbit"
     image: "rabbitmq:3-management"
-    environment:
-      VIRTUAL_PORT: ${PORT_RABBIT}
-      VIRTUAL_HOST: ${DOMAIN_RABBIT}
-      LETSENCRYPT_HOST: ${DOMAIN_RABBIT}
     volumes:
       - ./compose/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
-    # ports:
-    #   - "127.0.0.1:5672:5672"
-    #   - "127.0.0.1:15672:15672"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
     networks:
       - djangonetwork
-      - frontend-network
-
-
 
 networks:
   djangonetwork:
     driver: bridge
-  frontend-network:
-    external: true
-

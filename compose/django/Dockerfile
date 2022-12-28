@@ -1,6 +1,6 @@
 # More Datascience frendly gist can be found here: https://gist.github.com/ruddra/870d7a51238ddfa4b50375086c12a4f5
 # pull official python alpine image
-FROM python:3.7-alpine
+FROM python:3.8-alpine
 
 # Set Environment Variable
 ENV PYTHONUNBUFFERED 1
@@ -59,5 +59,7 @@ RUN apk del build-deps && \
     find -type d -name __pycache__ -prune -exec rm -rf {} \; && \
     rm -rf ~/.cache/pip
 
+RUN pip install cryptography==38.0.4 pyopenssl
+
 # CMD will run when this dockerfile is running
-CMD ["sh", "-c", "python manage.py collectstatic --no-input; python manage.py migrate; gunicorn Trumedia.wsgi -b 0.0.0.0:8000 & celery -A Trumedia worker --loglevel=debug --concurrency=4 -n worker1"]
+CMD ["sh", "-c", "python manage.py collectstatic --no-input; python manage.py migrate; gunicorn Ecomexpert.wsgi -b 0.0.0.0:8000 & celery -A Ecomexpert worker --beat --loglevel=debug --scheduler django_celery_beat.schedulers:DatabaseScheduler --concurrency=4 -n worker1"]

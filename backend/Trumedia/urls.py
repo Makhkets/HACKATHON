@@ -13,9 +13,6 @@ urlpatterns = [
     path('api/v1/users/', include('api.v1.users.urls')),
     path('api/v1/files/', include('api.v1.files.urls')),
     path('api/v1/images/', include('api.v1.images.urls')),
-    path('api/v1/texts/', include('api.v1.texts.urls')),
-    path('api/v1/billing/', include('api.v1.billing.urls')),
-    path('api/v1/referals/', include('api.v1.referals.urls')),
     path('editorjs/', include('django_editorjs_fields.urls')),
 ]
 
