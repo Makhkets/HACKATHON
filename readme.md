@@ -7,3 +7,7 @@
 
 * docker-compose --file docker-compose-dev.yml build
 * docker-compose --file docker-compose-dev.yml up
+
+* cd frontend/metod
+* npm i react-scripts
+* npm start

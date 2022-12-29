@@ -5,8 +5,12 @@ from api.v1.lights.const import ColorStatusChoices
 
 
 class Location(models.Model, GeoItem):
-    name = models.CharField(max_length=255, null=False, blank=False, verbose_name="Название города")
+    city = models.CharField(max_length=255, null=False, blank=False, verbose_name="Город")
+    district = models.CharField(max_length=255, null=False, blank=False, verbose_name="Район")
+    street = models.CharField(max_length=255, null=False, blank=False, verbose_name="Улица")
     color_status = models.CharField(max_length=15, null=False, blank=False, choices=ColorStatusChoices.choices, default=ColorStatusChoices.RE)
+    lon = models.FloatField()  # долгота
+    lat = models.FloatField()  # широта
     @property
     def geomap_longitude(self):
         return str(self.lon)
@@ -31,4 +35,4 @@ class Location(models.Model, GeoItem):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.coords} - {self.name}"
+        return f"{self.city} - {self.district} - {self.street}"
