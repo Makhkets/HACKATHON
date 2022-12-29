@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    
+    text-decoration: none;
 }
 
 main {
@@ -174,85 +174,95 @@ main {
             display: flex;
             flex-direction: row;
             height: 100%;
-            
-            .card {
-                display: flex;
-                align-items: center;
-                background-color: #3b3fff;
-                padding: 3%;
-                height: 40%;
-                width: 35%;
-                border-radius: 15px;
-                margin-left: 30px;
-
-                .info {
+            a {
+                text-decoration: none;
+                .card {
                     display: flex;
-                    flex-direction: column;
-
-                    .main {
-                        font-family: 'Nunito', sans-serif;
-                        font-weight: 800;
-                        margin-bottom: 10px;
-                        font-size: 50px;
-                        color: white;
-                        width: 50%;
-
+                    align-items: center;
+                    background-color: #3b3fff;
+                    padding: 3%;
+                    height: 220px;
+                    width: 500px;
+                    border-radius: 15px;
+                    margin-right: 30px;
+    
+                    .info { 
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+    
+                        .main {
+                            font-family: 'Nunito', sans-serif;
+                            font-weight: 800;
+                            margin-bottom: 10px;
+                            font-size: 50px;
+                            color: white;
+                            width: 50%;
+    
+                        }
+    
+                        .desc {
+                            font-family: 'Nunito', sans-serif;
+                            color: rgb(209, 209, 209);
+                        }
                     }
-
-                    .desc {
-                        font-family: 'Nunito', sans-serif;
-                        color: rgb(209, 209, 209);
+                    .img {
+                        background: none;
+                        margin-left: 20px;
+                        img {
+                            height: 90%;
+                            width: 85%;
+                            min-height: 50%;
+                            min-width: 50%;
+                            object-fit: cover;
+                        }
                     }
                 }
-                .img {
-                    background: none;
-                    margin-left: 20px;
-                    img {
-                        height: 90%;
-                        width: 90%;
-                        object-fit: contain;
+                .card2 {
+                    display: flex;
+                    align-items: center;
+                    padding: 3%;
+                    height: 220px;
+                    width: 500px;
+                    border-radius: 15px;
+                    background-color: #ff9c6c;
+                    margin-left: 30px;
+    
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+    
+                        .main {
+                            font-family: 'Nunito', sans-serif;
+                            font-weight: 800;
+                            margin-bottom: 10px;
+                            font-size: 50px;
+                            color: white;
+                            width: 50%;
+                        }
+    
+                        .desc {
+                            font-family: 'Nunito', sans-serif;
+                            color: rgb(228, 228, 228);
+                        }
+                    }
+                    .img {
+                        background: none;
+                        margin-left: 20px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            min-height: 100%;
+                            min-width: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
 
-            .card2 {
-                display: flex;
-                align-items: center;
-                background-color: #ff9c6c;
-                padding: 3%;
-                height: 40%;
-                width: 35%;
-                border-radius: 15px;
-                margin-left: 30px;
-
-                .info {
-                    display: flex;
-                    flex-direction: column;
-
-                    .main {
-                        font-family: 'Nunito', sans-serif;
-                        font-weight: 800;
-                        margin-bottom: 10px;
-                        font-size: 50px;
-                        color: white;
-                        width: 50%;
-                    }
-
-                    .desc {
-                        font-family: 'Nunito', sans-serif;
-                        color: rgb(228, 228, 228);
-                    }
-                }
-                .img {
-                    background: none;
-                    margin-left: 20px;
-                    img {
-                        height: 90%;
-                        width: 90%;
-                        object-fit: contain;
-                    }
-                }
-            }
         }
     }
     .info_block {
@@ -267,6 +277,153 @@ main {
             font-family: 'Nunito', sans-serif;
             font-weight: 500;
             width: 80%;
+        }
+    }
+}
+
+.rules_information {
+    height: 100%;
+
+    .cap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3b3fff;
+        border-radius: 15px;
+        height: 15%;
+
+        p {
+            
+            color: white;
+            font-size: 50px;
+            font-family: 'Nunito', sans-serif;
+            margin-right: 30px;
+        }
+    }
+
+    .list {
+        display: flex;
+
+        ul {
+            li {                
+                font-size: 18px;
+                margin-right: 50px;
+                margin-top: 6px;
+                font-family: 'Nunito', sans-serif;
+
+                a {
+                    color: #3b3fff;
+                }
+            }
+        }
+    }
+    .list2 {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                    color:black;
+                    font-family: 'Nunito', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.advice_information {
+    height: 100%;
+
+    .cap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff9c6c;
+        border-radius: 15px;
+        height: 7%;
+
+        p {
+            
+            color: white;
+            font-size: 50px;
+            font-family: 'Nunito', sans-serif;
+            margin-right: 30px;
+        }
+    }
+
+    .list {
+        display: flex;
+
+        ul {
+            li {                
+                font-size: 15px;
+                margin-right: 50px;
+                margin-top: 6px;
+                font-family: 'Nunito', sans-serif;
+
+                a {
+                    color: #3b3fff;
+                }
+            }
+        }
+    }
+    .list2 {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                    color:black;
+                    font-family: 'Nunito', sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.other_information {
+    height: 100%;
+
+    .cap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 15px;
+        height: 15%;
+
+        p {
+            
+            color: white;
+            font-size: 50px;
+            font-family: 'Nunito', sans-serif;
+            margin-right: 30px;
+        }
+    }
+
+    .list {
+        display: flex;
+
+        ul {
+            li {                
+                font-size: 18px;
+                margin-right: 50px;
+                margin-top: 6px;
+                font-family: 'Nunito', sans-serif;
+
+                a {
+                    color: #3b3fff;
+                }
+            }
+        }
+    }
+    .list2 {
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                    color:black;
+                    font-family: 'Nunito', sans-serif;
+                }
+            }
         }
     }
 }

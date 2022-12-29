@@ -7,6 +7,10 @@ import Index from "./pages/Index"
 import "./css/style.css"
 import "./css/main.css"
 
+import Infromation from "./pages/Information";
+import Admin from "./pages/TrafficLight";
+import TrafficLight from "./pages/TrafficLight";
+
 const App = () => {
   return (
       <Fragment>
@@ -14,6 +18,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Layout />} >
                 <Route index element={<Index />} />
+                <Route path="/information/:id" element={<Infromation />} />
+                <Route path="/traffic" element={<TrafficLight />} />
             </Route>        
           </Routes>
 

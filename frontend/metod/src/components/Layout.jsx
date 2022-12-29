@@ -38,9 +38,9 @@ const Layout = () => {
     const choice = () => {
         if (location.pathname === "/")
             return "1";
-        else if (location.pathname.includes("profile"))
-            return "2";
         else if (location.pathname.includes("information"))
+            return "2";
+        else if (location.pathname.includes("traffic"))
             return "3";
         else if (location.pathname.includes("add"))
             return "4";

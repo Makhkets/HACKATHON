@@ -10,37 +10,40 @@ const Index = () => {
             <div className="main_index">
                 <div className="stock">
                     <div className="title">
-                        <p>Акции</p>
+                        <p>Step to Future</p>
                     </div>
                     <div className="carousel">
-                        <div className="card">
-                            <div className="info">
-                                <p className="main">
-                                    Дарим подарки!
-                                </p>
-                                <p className="desc">
-                                    При покупке от 2-х книг
-                                </p>
+                        <Link to="/information/rules">
+                            <div className="card">
+                                <div className="info">
+                                    <p className="main">
+                                        Правила ПДД!
+                                    </p>
+                                    <p className="desc">
+                                        Карточка кликабельна
+                                    </p>
+                                </div>
+                                <div className="img">
+                                    <img src="https://i.ibb.co/6J2qddg/png-clipart-traffic-light-traffic-light-thumbnail-Photo-Room-png-Photo-Room.png" alt="" />
+                                </div>
                             </div>
-                            <div className="img">
-                                <img src="https://i.ibb.co/6J2qddg/png-clipart-traffic-light-traffic-light-thumbnail-Photo-Room-png-Photo-Room.png" alt="" />
-                            </div>
-                        </div>
+                        </Link>
 
-
-                        <div className="card2">
-                            <div className="info">
-                                <p className="main">
-                                    Дарим подарки!
-                                </p>
-                                <p className="desc">
-                                    При покупке от 2-х книг
-                                </p>
+                        <Link to="/information/advice">
+                            <div className="card2">
+                                <div className="info">
+                                    <p className="main">
+                                        Советы водителям!
+                                    </p>
+                                    <p className="desc">
+                                        Карточка кликабельна
+                                    </p>
+                                </div>
+                                <div className="img">
+                                    <img src="https://i.ibb.co/6J2qddg/png-clipart-traffic-light-traffic-light-thumbnail-Photo-Room-png-Photo-Room.png" alt="" />
+                                </div>
                             </div>
-                            <div className="img">
-                                <img src="https://i.ibb.co/6J2qddg/png-clipart-traffic-light-traffic-light-thumbnail-Photo-Room-png-Photo-Room.png" alt="" />
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 
