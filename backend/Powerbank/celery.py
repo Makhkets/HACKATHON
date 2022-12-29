@@ -15,11 +15,11 @@ app = Celery('Powerbank')
 app.config_from_object('django.conf:settings', namespace='CELERY')
 
 app.autodiscover_tasks()
-app.control.revoke([
-    uuid
-    for uuid, _ in
-    State().tasks_by_type("Get residential full data")
-])
+# app.control.revoke([
+#     uuid
+#     for uuid, _ in
+#     State().tasks_by_type("Get residential full data")
+# ])
 
 # app.conf.beat_schedule = {
 #     'Updating cities': {
