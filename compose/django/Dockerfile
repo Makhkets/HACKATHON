@@ -62,4 +62,4 @@ RUN apk del build-deps && \
 RUN pip install cryptography==38.0.4 pyopenssl
 
 # CMD will run when this dockerfile is running
-CMD ["sh", "-c", "python manage.py collectstatic --no-input; python manage.py migrate; gunicorn Ecomexpert.wsgi -b 0.0.0.0:8000 & celery -A Ecomexpert worker --beat --loglevel=debug --scheduler django_celery_beat.schedulers:DatabaseScheduler --concurrency=4 -n worker1"]
+CMD ["sh", "-c", "python manage.py collectstatic --no-input; python manage.py migrate; gunicorn Powerbank.wsgi -b 0.0.0.0:8000 & celery -A Powerbank worker --beat --loglevel=debug --scheduler django_celery_beat.schedulers:DatabaseScheduler --concurrency=4 -n worker1"]

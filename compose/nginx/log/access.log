@@ -1,0 +1,4 @@
+172.18.0.1 - - [29/Dec/2022:15:49:18 +0000] "GET /admin/ HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [29/Dec/2022:15:49:18 +0000] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2262 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [29/Dec/2022:15:50:43 +0000] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0 "http://localhost/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+172.18.0.1 - - [29/Dec/2022:15:50:44 +0000] "GET /admin/ HTTP/1.1" 200 13704 "http://localhost/admin/login/?next=/admin/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"

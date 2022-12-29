@@ -7,7 +7,7 @@ from rest_framework.generics import RetrieveAPIView, GenericAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from Trumedia import settings
+from Powerbank import settings
 from .user_utils import create_user_and_tokens, auto_registrate_user
 from ..users.models import UserToken, User
 from .serializers import CreateUserSerializer, TokenSerializer, EmailConfSerializer, \

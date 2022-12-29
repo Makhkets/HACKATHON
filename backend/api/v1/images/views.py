@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 import random
 
-from Trumedia import settings
+from Powerbank import settings
 from api.v1.images.models import Image
 from api.v1.images.serializers import ImageSerializer
 from api.v1.images.utils import upload_image

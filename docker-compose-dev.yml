@@ -28,8 +28,8 @@ services:
     build:
       context: .
       dockerfile: compose/django/Dockerfile
-    image: comexpert_django
-    container_name: comexpert_django
+    image: powerbank_django
+    container_name: powerbank_django
     restart: always
     depends_on:
       - postgres

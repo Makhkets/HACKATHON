@@ -1,6 +1,6 @@
 from django.core.files.storage import FileSystemStorage
 
-from Trumedia import settings
+from Powerbank import settings
 from api.v1.images.models import Image
 from utils.utils import parse_bool
 
