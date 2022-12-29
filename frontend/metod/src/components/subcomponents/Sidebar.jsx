@@ -54,14 +54,13 @@ const Sidebar = (props) => {
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href="https://t.me/POWERBANK2023">
                                     <ion-icon name="people" style={{fontSize: "25px"}}></ion-icon>
                                     <p>Команда</p>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                
                 </div>
             </div>
         </>

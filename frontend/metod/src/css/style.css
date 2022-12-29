@@ -347,4 +347,98 @@ main {
   font-size: 13px;
   color: black;
   font-family: "Nunito", sans-serif;
+}
+
+.traffic_main .trf {
+  height: 50%;
+  width: 100%;
+  background-color: red;
+}
+
+.light_information {
+  height: 100%;
+}
+.light_information .cap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 15px;
+  height: 12%;
+  margin-bottom: 30px;
+}
+.light_information .cap p {
+  color: white;
+  font-size: 48px;
+  font-family: "Nunito", sans-serif;
+  margin-right: 30px;
+}
+.light_information .container {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+}
+.light_information .container .traffic {
+  background-color: black;
+  border-radius: 60px;
+  height: 85%;
+  width: 30%;
+}
+.light_information .container .traffic .block {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.light_information .container .traffic .block ._1 {
+  height: 23vh;
+  width: 23vh;
+  border-radius: 100%;
+}
+.light_information .container .traffic .block ._2 {
+  margin-top: 30px;
+  height: 23vh;
+  width: 23vh;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+.light_information .container .traffic .block ._3 {
+  height: 23vh;
+  width: 23vh;
+  border-radius: 100%;
+}
+.light_information .container .info {
+  margin-left: 5%;
+}
+.light_information .container .info .title {
+  margin-bottom: 2vh;
+}
+.light_information .container .info .title p {
+  color: #3b3fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 45px;
+}
+.light_information .container .info .desc {
+  width: 80%;
+}
+.light_information .container .info .desc p {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.light_information .container .info .desc .traffifc_button {
+  margin-top: 30px;
+  background-color: #3b3fff;
+  color: white;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  font-size: 20px;
+  border-radius: 17px;
+  height: 80px;
+  cursor: pointer;
+  width: 350px;
 }/*# sourceMappingURL=style.css.map */

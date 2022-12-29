@@ -427,3 +427,110 @@ main {
         }
     }
 }
+
+.traffic_main {
+
+    .trf {
+        height: 50%;
+        width: 100%;
+        background-color: red;
+    }
+}
+
+.light_information {
+    height: 100%;
+
+    .cap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 15px;
+        height: 12%;
+        margin-bottom: 30px ;
+
+        p {
+            color: white;
+            font-size: 48px;
+            font-family: 'Nunito', sans-serif;
+            margin-right: 30px;
+        }
+    }
+
+
+    .container {
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 100%;
+
+        .traffic {
+            background-color: black;
+            border-radius: 60px;
+            height: 85%;
+            width: 30%;
+
+            .block {
+                display: flex;
+                flex-direction: column;
+                min-width: 400px;
+                height: 100%;
+
+                justify-content: center;
+                align-items: center;
+
+
+                ._1 {
+                    height: 23vh;
+                    width: 23vh;
+                    border-radius: 100%;
+                }
+                ._2 {
+                    margin-top: 30px;
+                        height: 23vh;
+                    width: 23vh;
+                    border-radius: 100%;
+                    margin-bottom: 30px;
+                }
+                ._3 {
+                    height: 23vh;
+                    width: 23vh;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .info {
+            margin-left: 5%;
+            .title {
+                margin-bottom: 2vh;
+                p {
+                    color: #3b3fff;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 45px;
+                }
+            }
+            .desc {
+                width: 80%;
+                p {
+                    font-size: 20px;
+                    letter-spacing: 1.5px;
+                }
+                .traffifc_button {
+                    margin-top: 30px;
+                    background-color: #3b3fff;
+                    color: white;
+                    outline: none;
+                    font-family: 'Nunito', sans-serif;
+                    border: none;
+                    font-size: 20px;
+                    border-radius: 17px;
+                    height: 80px;
+                    cursor: pointer;
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
