@@ -52,7 +52,14 @@ const Index = () => {
                         <p>Smart TL:</p>
                     </div> 
                     <div className="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, fuga optio consequatur nostrum ea eius dolore ipsa hic impedit iusto est id delectus! Et modi maxime vitae totam nesciunt perferendis optio explicabo soluta iusto dolores officiis perspiciatis placeat animi sequi deserunt, voluptates velit omnis in reiciendis. Saepe adipisci, sint debitis illum, eius dignissimos in reiciendis unde atque modi incidunt distinctio pariatur magnam facilis nesciunt quia ipsam, accusamus aliquid ab inventore natus. Sunt soluta officia repudiandae at similique deserunt vitae possimus. Laudantium fuga unde voluptatum veniam, eum delectus itaque maxime voluptatibus reprehenderit nemo amet magni necessitatibus voluptas vero aliquam. Necessitatibus, quae?</p>
+                        <p>Светофор будущего - это технология , которая позволит оптимизировать трафик движения, облегчить машинам экстренных служб передвижения. 
+Каким образом это будет происходить? 
+Приводя в счет статистику «текст»
+Однако, с нашим светофором дела будут стоять иначе. 
+Это самообучеммая нейронная модель, которая каждую минуту будет анализировать дорожное движение так, чтобы на дорогах(чаще всего на перекрасках) не было скопления машин на одной стороне , в то время , когда другая сторона пустует. Модель будет выделять больше времени зеленого цвета для заполненной полосы. Также для регулировщиком и работников дпс будут отдельные анкеты , которые позволят им воздействовать на светофор для переключения цветов в ручную(при экстренных ситуациях или для пропуска кортежа)
+Всем известна проблема о непосредственной задержке машин экстренных службы из-за пробок или ДТП. 
+Наша модель будет в реальной времени наблюдать за происходящим на дороге и в случае включения спец сигналов , она будет переключать светофор в пользу машин экстренной службы, что позволит поскорее проехать машинам.
+Перебои  с электроснабжением могут служить катализатором пробок,  чтобы справиться с этой проблемой и для увеличения функциональности этих светофоров , мы решили использовать на них солнечные батареи</p>
                     </div>
                 </div>
             
