@@ -40,7 +40,6 @@ main {
 
         }
         .title {
-
             margin-top: 30px;
             display: flex;
             justify-content: center;
@@ -128,6 +127,7 @@ main {
 .cap {
     width: 100%;
     height: auto;
+    margin-bottom: 3%;
 
     .colums {
         display: flex;
@@ -156,6 +156,117 @@ main {
                     }
                 }
             }
+        }
+    }
+}
+
+.main_index {
+    height: 45%;
+    .stock {
+        height: 100%;
+        .title {
+            font-weight: 1000;
+            font-size: 40px;
+            font-family: 'Chivo Mono', monospace;
+            margin-bottom: 2%;
+        }
+        .carousel {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            
+            .card {
+                display: flex;
+                align-items: center;
+                background-color: #3b3fff;
+                padding: 3%;
+                height: 40%;
+                width: 35%;
+                border-radius: 15px;
+                margin-left: 30px;
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+
+                    .main {
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 800;
+                        margin-bottom: 10px;
+                        font-size: 50px;
+                        color: white;
+                        width: 50%;
+
+                    }
+
+                    .desc {
+                        font-family: 'Nunito', sans-serif;
+                        color: rgb(209, 209, 209);
+                    }
+                }
+                .img {
+                    background: none;
+                    margin-left: 20px;
+                    img {
+                        height: 90%;
+                        width: 90%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .card2 {
+                display: flex;
+                align-items: center;
+                background-color: #ff9c6c;
+                padding: 3%;
+                height: 40%;
+                width: 35%;
+                border-radius: 15px;
+                margin-left: 30px;
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+
+                    .main {
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 800;
+                        margin-bottom: 10px;
+                        font-size: 50px;
+                        color: white;
+                        width: 50%;
+                    }
+
+                    .desc {
+                        font-family: 'Nunito', sans-serif;
+                        color: rgb(228, 228, 228);
+                    }
+                }
+                .img {
+                    background: none;
+                    margin-left: 20px;
+                    img {
+                        height: 90%;
+                        width: 90%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .info_block {
+        .title {
+            font-weight: 700;
+            font-size: 40px;
+            font-family: 'Chivo Mono', monospace;
+            margin-bottom: 2%;
+        }
+        .desc {
+            letter-spacing: 1.5px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
+            width: 80%;
         }
     }
 }

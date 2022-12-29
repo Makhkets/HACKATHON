@@ -48,15 +48,15 @@ const Sidebar = (props) => {
                     <div className="two_puncts">
                         <ul>
                             <li>
-                                <a>
+                                <a href="https://t.me/mahamerz" style={{textDecoration: "none"}}>
                                     <ion-icon name="flash" style={{fontSize: "25px"}}></ion-icon>
-                                    <p>Акции</p>
+                                    <p>Поддержка</p>
                                 </a>
                             </li>
                             <li>
                                 <a>
                                     <ion-icon name="moon" style={{fontSize: "23px"}}></ion-icon>
-                                    <p>Хиты продаж</p>
+                                    <p>Команда</p>
                                 </a>
                             </li>
                         </ul>
