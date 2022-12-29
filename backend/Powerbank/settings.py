@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'api.v1.users',
     'api.v1.lights',
-    'django_admin_geomap',
     'api.v1.files',
     'api.v1.images',
+    'django_admin_geomap',
     'silk',
     'oauth2_provider',
     'social_django',
@@ -99,8 +99,7 @@ ROOT_URLCONF = 'Powerbank.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': (['./templates'],
-                 ['path/to/installed/django_admin_geomap/templates']),
+        'DIRS': ['path/to/installed/django_admin_geomap/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

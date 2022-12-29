@@ -35,7 +35,7 @@ const Sidebar = (props) => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/admin">
+                                <a href="http://localhost/admin/" target="_blanks">
                                     <ion-icon name="desktop" style={{fontSize: "25px"}}></ion-icon>
                                     <p>Админка</p>
                                 </a>
@@ -48,13 +48,13 @@ const Sidebar = (props) => {
                     <div className="two_puncts">
                         <ul>
                             <li>
-                                <a href="https://t.me/mahamerz" style={{textDecoration: "none"}}>
+                                <a href="https://t.me/mahamerz" target="_blanks" style={{textDecoration: "none"}}>
                                     <ion-icon name="flash" style={{fontSize: "25px"}}></ion-icon>
                                     <p>Поддержка</p>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://t.me/POWERBANK2023">
+                                <a href="https://t.me/POWERBANK2023" target="_blanks">
                                     <ion-icon name="people" style={{fontSize: "25px"}}></ion-icon>
                                     <p>Команда</p>
                                 </a>
